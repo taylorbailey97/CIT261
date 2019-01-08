@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!</title>
+    <script>
+        function onClick(){
+          //Use document.getElementById.value to get the text value of the input field
+          var text = document.getElementById("input").value; 
+          //Use document.getElementById.innterHTML to assign the value of text to the div
+          document.getElementById("info").innerHTML = text;
+      }
+    
+  </script>
+</head>
+
+<body>
+    <input type="text" name="userInput" id="input">
+    <button type="button" onclick="onClick()">Submit</button>
+    <div id="info">
+    </div>
+
+</body>
+</html>
